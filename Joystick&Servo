@@ -1,0 +1,30 @@
+from machine import Pin, PWM, ADC
+from time import sleep
+
+# Set up PWM for servo on GPIO 15
+servo = PWM(Pin(15))
+servo.freq(50)
+
+# Set up joystick on ADC pin
+joystick_x = ADC(Pin(26))  # Adjust depending on your pin
+
+# Function to control servo based on joystick input
+def move_servo():
+    # Read joystick value (range 0-65535)
+    x = joystick_x.read_u16()
+
+    # Map joystick value to servo angle (0 to 180)
+    # Joystick value of 0 -> 0° | Joystick value of 65535 -> 180°
+    angle = int((x / 65535 ) * 360)
+                
+                
+                
+    # Calculate the duty cycle based on the angle
+    duty = int((angle / 97) * 2000 + 1000)  # Duty cycle range: 1000-2000 microseconds
+
+    # Send PWM signal to servo
+    servo.duty_u16(duty)
+
+while True:
+    move_servo()
+    sleep(0.1)
