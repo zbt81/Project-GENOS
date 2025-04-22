@@ -1,3 +1,13 @@
+###########################
+# THIS DOCUMENT IS FOR TESTING A SINGLE SERVO WITH A JOYSTICK
+# TO USE : USING THONNY, SAVE THIS CODE TO THE RASBERRY PICO PI W 
+# WRITTEN IN MICROPYTHON
+# ZACHARY TAMBOA zbt@hawaii.edu or zach.tamboa@gmail.com
+###########################
+
+
+
+
 from machine import Pin, PWM, ADC
 from time import sleep
 
