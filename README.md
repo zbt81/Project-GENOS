@@ -1,4 +1,4 @@
-# 🤖 Project GENOS: ASL Robotic Hand
+#  Project GENOS: ASL Robotic Hand
 
 A low-cost, servo-driven robotic hand designed to replicate American Sign Language (ASL) gestures using a Raspberry Pi Pico. This project focuses on accessibility, affordability, and education — offering an open-source alternative to high-cost systems like the Neuromaker Hand.
 
