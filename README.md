@@ -45,5 +45,11 @@ Originally envisioned as a prosthetic for users with limb differences, GENOS evo
 
 ---
 
-## 💾 File Structure
-
+##  File Structure
+- `5FingerTest.py` — Test for servos in alternating directions after redoing servo orientations  
+- `5ServoJoystickcode.py` — Testing 5 servos in the same direction  
+- `5ServoTest.py` — Auto test for servo motion  
+- `ASLVersion1.py` — Working automated test for the ASL characters  
+- `Backup_oled.py` — Backup working code for OLED  
+- `Joystick&Servo.py` — Joystick test for a single servo  
+- `Project-Genos(with_oled).py` — ✅ Final working code for the project — use this on Pico Pi 
